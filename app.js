@@ -22,7 +22,8 @@ app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(methodOverride("_method"));
 app.use(flash());
-mongoose.connect("mongodb://localhost:27017/yelp_camp", {useNewUrlParser: true});
+mongoose.connect("mongodb://kachi:9HXb5JWY701@ds223812.mlab.com:23812/yelplike", {useNewUrlParser: true});
+// mongoose.connect("mongodb://localhost:27017/yelp_camp", {useNewUrlParser: true});
 // Seed Database
 // seedDB();
 
