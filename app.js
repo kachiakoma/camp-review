@@ -24,8 +24,6 @@ app.use(methodOverride("_method"));
 app.use(flash());
 
 mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true});
-// mongoose.connect("mongodb://kachi:9HXb5JWY701@ds223812.mlab.com:23812/yelplike", {useNewUrlParser: true});
-// mongoose.connect("mongodb://localhost:27017/yelp_camp", {useNewUrlParser: true});
 
 // Passport Configuration
 app.use(require("express-session")({
